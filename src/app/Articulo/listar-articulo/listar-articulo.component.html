@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Artículos</h3>
+            <button (click)="NuevoArticulo()" type="button" class="btn btn-primary">Nuevo</button>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover text-center">
+                <thead>
+                    <tr>
+                         <th>Código</th>
+                         <th>Descripción</th>
+                         <th>Precio Unitario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let articulo of articulos" class="text-center">
+                        <td >{{articulo.codigo}}</td>
+                        <td>{{articulo.nombre}}</td>
+                        <td>{{articulo.preciounitario}}</td>
+                
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
