@@ -1,27 +1,14 @@
 # FrontOrdenes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+Este proyecto es la parte FrontEnd de una aplicación que permite realizar ordenes de productos para clietnes.El proyecto se comunica con la parte del BackEnd mediante el uso de servicios REST.
 
-## Development server
+- Para la clonación del proyecto BackEnd desarrollado en Java con el framework Spring, se puede acceder a través de:https://github.com/ebenavidesa1/Ppractica-Ordenes-BackEnd.git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Para la utilización del proyecto desarrollado en angular, es necesario tener instalados los paquetes necesarios, para ello podemos guiarnos a través de la páginad de ANGULAR CLI: https://cli.angular.io/
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Para realizar la instalación, tenemos que correr a través de la consola de windows los siguientes comandos:
+ npm install -g @angular/cli
+ 
+ - Una vez instalado los paquetes necesarios, procedemos a abrir el proyecto, con un editor de texto, por ejemplo: Visual Studio Code.
+ 
+ - Si utilizamos Visual Studio Code accedemos a la terminal y para correr el proyecto ejecutamos el comando ng serve.
