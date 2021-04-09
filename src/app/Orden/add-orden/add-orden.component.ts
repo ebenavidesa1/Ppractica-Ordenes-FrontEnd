@@ -58,10 +58,17 @@ export class AddOrdenComponent implements OnInit {
   GuardarDetalle(detalle:DetalleOrden){
   
     this.servicedet.createDetalleOrden(detalle).subscribe(data=>{
-      alert("El detalle se creó correctamente...!");
+
+      alert("El detalle se creó correctamente...!"+detalle.iddetalle);
+     
       this.servicedet.geDetallesOrden(detalle.orden.idorden).subscribe(data=>{
         this.detalles=data;
+      
       })
+      
+    })
+
+    this.servicedet.getStock(detalle.iddetalle).subscribe(data=>{
     })
 
   }
