@@ -18,4 +18,8 @@ export class ServicedetalleService {
   createDetalleOrden(detalle:DetalleOrden){
     return this.http.post<DetalleOrden>(this.Url,detalle);
   }
+
+  getStock(iddetalle:number){
+    return this.http.get<DetalleOrden>(this.Url+"/stock/"+iddetalle);
+  }
 }
